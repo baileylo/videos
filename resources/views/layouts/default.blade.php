@@ -57,6 +57,17 @@
 @yield('subHead')
 
 <div class="container">
+
+    @if (session()->has('global_flash'))
+        <div class="row">
+            <div class="col-sm-8 col-sm-push-2">
+                <div class="alert alert-warning" role="alert">{{ session('global_flash') }}</div>
+            </div>
+        </div>
+    @endif
+
+
+
     <!-- Example row of columns -->
     @yield('content')
 

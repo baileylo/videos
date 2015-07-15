@@ -8,7 +8,7 @@
         <div class="row">
             @foreach ($videoList as $video)
                 <div class="col-sm-3 text-center">
-                    <img src="{{ $video->image }}" width="128" height="128" />
+                    <img src="{{ $video->thumbnail }}" width="128" height="128" />
                     <h5>{{ $video->title }}</h5>
                 </div>
             @endforeach
